@@ -1,12 +1,12 @@
 from django.db import models
 
 
-class Acessorio(models.Model):
+class Categoria(models.Model):
     descricao = models.CharField(max_length=100, null=False)
 
     def __str__(self):
         return f"{self.descricao} ({self.id})"
 
     class Meta:
-        verbose_name = "Acessório"
-        verbose_name_plural = "Acessórios"
+        verbose_name = "Categoria"
+        verbose_name_plural = "Categorias"
