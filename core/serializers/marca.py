@@ -1,9 +1,9 @@
 from rest_framework.serializers import ModelSerializer
 
-from core.serializers import marca
+from core.models import Marca
 
 
 class MarcaSerializer(ModelSerializer):
     class Meta:
-        model = marca
-        fields = "__str__"
+        model = Marca
+        fields = "__all__"
